@@ -1,0 +1,100 @@
+.Nav {
+    height: 80px;
+    background:  #97D3C9;
+    border-top: .02px  solid white;
+    .menubar {
+        color: white;
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .links {
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        font-style: italic;
+        
+        .link {
+            
+            padding: 20px;
+            display: inline-block;
+            margin: 0px 60px 0px 60px;
+            &:hover {
+                //transition: 1s;
+                border-bottom: 3px solid;
+            }
+            //&:active { border-bottom: 3px solid;}
+        }
+    }
+    // .menulinks {
+    //     box-sizing: initial;
+    //     position: absolute;
+    //     justify-content: center;
+    //     text-align: center;
+    //     top: 142px;
+    //     width: 100%;
+    //     height: 300px;
+    //     padding: 90px;
+    //     background-color: rgb(160, 117, 42);
+    //     margin: 0px 20px 0px 20px;
+    //     .item {
+    //         font-size: 30px;
+    //         padding: 20px;
+    //     }
+    // }
+}
+@media screen and (max-width: 1050px) {
+    .Nav {
+        .links {
+            .link {
+                margin: 0px 30px 0px 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .Nav {
+        .links {
+            .link {
+                margin: 0px 20px 0px 20px;
+                font-size: 27px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 700px) {
+    .Nav {
+        .menubar {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 699px) {
+    .Nav {
+        height: 0px;
+        height: 100%;
+        
+        .links {
+            //border-bottom: 2px rosybrown;
+            .link {
+                padding: 30px;
+                border-bottom: 3px solid ;
+                display: block;
+            }
+        }
+    }
+}
+
+// @media screen and (max-width: 700px) {
+//     .Nav {
+//         //height: 100px;
+//     }
+// }
