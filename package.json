@@ -10,11 +10,15 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "font-awesome": "^4.7.0",
+    "heroku": "^7.39.1",
+    "nodeman": "^1.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "sass": "^1.26.3"
   },
+  "homepage": "https://meatch-uclax-inclass.herokuapp.com",
+  "heroku-run-build-script": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
