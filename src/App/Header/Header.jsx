@@ -13,9 +13,9 @@ const Header = () => {
             <div className="comp">
                 < Title  />
             </div>
-            <div className="flag">
+            {/* <div className="flag">
                 <img src = '/img/flag.png' alt = 'flag' />
-            </div>
+            </div> */}
         </div>
     )
 };
