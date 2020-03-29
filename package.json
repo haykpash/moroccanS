@@ -18,6 +18,7 @@
     "sass": "^1.26.3"
   },
   "homepage": "https://moroocan.herokuapp.com",
+  "heroku-run-build-script": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
