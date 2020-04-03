@@ -6,9 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Nav = () => {
-    
+
     const [showMenu, updateShowMenu] = useState(false);
-    
+
     const handleMenubarClick = () => {
         console.log('Menubar Click');
 
@@ -25,6 +25,10 @@ const Nav = () => {
             updateShowMenu(false);
         }
     }
+    const handleNavLinkClick = () => {
+        console.log('handleNavLinkClick clicked');
+        updateShowMenu(false);
+    }
     useEffect (()=>{
         window.addEventListener('resize', handleWindowResize);
         handleWindowResize();
@@ -34,16 +38,9 @@ const Nav = () => {
             <div className = 'menubar' onClick = { handleMenubarClick }>
                 <FontAwesomeIcon icon={  faBars } /> 
                 
-                {/* <div className="menulinks">
-                    <div className = "item"> home </div>
-                    <div className = "item"> catalog </div>
-                    <div className = "item"> creat account </div>
-                    <div className = "item"> log in  </div>
-                </div> */}
-                
             </div>
             { showMenu && 
-            <div className = "links" >
+            <div className = "links" onClick = { handleNavLinkClick } >
                 <NavLink className='link' to='/'exact >home</NavLink>
                 <NavLink className='link' to='/catalog'>catalog</NavLink>
                 <NavLink className='link' to='/login'>log in</NavLink>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect }from 'react';
-//import './Colors.scss';
-//import { colorType } from './colors.js';
+import './Colors.scss';
 import API from '../../../common/API.js';
 
 const ColorType = () => {
@@ -20,9 +19,8 @@ const ColorType = () => {
 
     return colorType.map((colorType, idx) => {
         return (
-        <div  key={ idx } className={ 'ColorType' }>
+        <div  key={ idx }>
             <img src={ colorType.img } alt={colorType.name } />
-            <h3>{ colorType.name }</h3>
         </div>
         );
     });
@@ -31,11 +29,8 @@ const ColorType = () => {
 
 const Colors = () => {
   return (
-    <div className='Colors'>
-      {/* <h2></h2> */}
-        <div className='separate'>
-        <ColorType />
-      </div>
+    <div >
+      <ColorType />
     </div>
   )
 }
