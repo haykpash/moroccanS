@@ -5,19 +5,21 @@
     //@extend: rgb(153, 101, 21);
     color: rgb(179, 126, 36);
     letter-spacing: 15px;
-    font-weight: lighter;
+    //font-weight: lighter;
     font-family: 'Alata', sans-serif;
     font-size: 50px;
     
 }
 @media screen and (max-width: 1050px) {
     .Title {
-        font-size: 40px;
+        font-size: 30px;
+        letter-spacing: 10px;
     }
 }
 @media screen and (max-width: 670px) {
     .Title {
-        font-size: 25px;
-        font-weight:bold;
+        font-size: 22px;
+        //font-weight:bold;
+        letter-spacing: 5px;
     }
 }
