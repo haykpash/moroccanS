@@ -1,13 +1,15 @@
 module.exports = [
     {
-        img: '/img/facebook.png', 
+        img: '/img/photosSVG/facebook.png', 
         name: 'facebook',
     },
     {
-        img: '/img/instagram.png',
+        img: '/img/photosSVG/instagram.png',
+        name: 'instagram',
     },
     {
-        img: '/img/twitter.png',
+        img: '/img/photosSVG/twitter.png',
+        name: 'twitter',
     },
     // {
     //     image: '/img/Staff/staff-4.jpeg',

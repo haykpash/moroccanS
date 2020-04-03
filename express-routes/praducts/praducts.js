@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-const icons = require('./iconsData.js');
+const praducts = require('./praductsData.js');
 
 router.get('/', (req,res) => { 
-    res.json(icons);
-    console.log('Retreived Icons'); 
+    res.json(praducts);
+    console.log('Retreived Praducts'); 
 });
 
 module.exports = router;

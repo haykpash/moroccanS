@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Nav.scss';
+import { NavLink } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -43,10 +44,10 @@ const Nav = () => {
             </div>
             { showMenu && 
             <div className = "links" >
-                <div className = "link"> home </div>
-                <div className = "link"> catalog </div>
-                <div className = "link"> log in </div>
-                <div className = "link"> creat account </div>
+                <NavLink className='link' to='/'exact >home</NavLink>
+                <NavLink className='link' to='/catalog'>catalog</NavLink>
+                <NavLink className='link' to='/login'>log in</NavLink>
+                <NavLink className='link' to='/account'>create account</NavLink>
             </div>
             }
         </div>

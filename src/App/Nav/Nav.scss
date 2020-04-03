@@ -19,11 +19,11 @@
     .links {
         text-align: center;
         font-size: 30px;
-        color: white;
         font-style: italic;
         
         .link {
-            
+            color: white;
+            text-decoration: none;
             padding: 20px;
             display: inline-block;
             margin: 0px 60px 0px 60px;

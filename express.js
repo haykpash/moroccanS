@@ -29,7 +29,7 @@ app.use((request, response, next) => {
 ---------------------------*/
 const routes = require('./express-routes/index.js');
 app.use('/api/icons', routes.icons);
-// app.use('/api/services', routes.services);
+app.use('/api/praducts', routes.praducts);
 // app.use('/api/slides', routes.slides);
 // app.use('/api/email', routes.email);
 // app.use('/api/login', routes.login);
@@ -37,8 +37,12 @@ app.use('/api/icons', routes.icons);
 // Catchall for requests that do not match our routing
 app.get('*', (req, res) => { 
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    //res.sendFile(path.join(__dirname, 'public'));
 });
-
+                                                                            
+// This is linda example for postman (http://localhost:5000/hello)
+//app.get('/hello', (req, res) => res.send('Hello!'));
+                                                                            
 // Heroku hook to use dynamic port binding
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
