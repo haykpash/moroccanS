@@ -32,7 +32,7 @@ const ColorType = () => {
 const Colors = () => {
   return (
     <div className='Colors'>
-      <h2>Colors</h2>
+      {/* <h2></h2> */}
         <div className='separate'>
         <ColorType />
       </div>

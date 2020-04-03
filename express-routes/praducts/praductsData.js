@@ -1,5 +1,9 @@
 module.exports = [
   {
+    img: '/img/photos/img-3.JPG', 
+    name: 'facebook',
+  },
+  {
     img: '/img/photos/img-1.JPG', 
     name: 'facebook',
 },
@@ -8,7 +12,7 @@ module.exports = [
   name: 'facebook',
 },
 {
-  img: '/img/photos/img-3.JPG', 
+  img: '/img/photos/img-1.JPG', 
   name: 'facebook',
 },
 {

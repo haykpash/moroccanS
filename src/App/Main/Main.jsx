@@ -2,7 +2,7 @@ import React from 'react';
 import './Main.scss';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from '../Pages/Home/Home.jsx';
+import Colors from '../Pages/Home//Colors/Colors.jsx';
 import Account from '../Pages/Account/Account.jsx';
 import Catalog from '../Pages/Catalog/Catalog.jsx';
 import Login from '../Pages/Login/Login.jsx';
@@ -20,8 +20,9 @@ const Main = () => {
                 <Route path='/login'>
                     <Login/>
                 </Route>
-                <Route path='/' component={Home}>
-                    {/* <Home/> */}
+                <Route path='/'> 
+                    
+                    <Colors/>
                 </Route>
             </Switch>
             
