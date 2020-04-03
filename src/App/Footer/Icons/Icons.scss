@@ -1,9 +1,9 @@
 .icons {
     display: inline-block;
-    padding: 20px;
+    
     img {
         
-        padding: 5px;
+        padding: 20px;
         width:40px;
         height: auto;
         margin: 20px;
@@ -13,4 +13,7 @@
             border-bottom: 2px solid white;
         }
     }
+}
+.mediaicons {
+    text-align: center;
 }

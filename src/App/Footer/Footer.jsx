@@ -3,13 +3,12 @@ import './Footer.scss';
 
 
 //import Snow from './Snow/Snow.jsx';
-// import Icons from './Icons/Icons.jsx';
-//import IconsPhotos from './Icons/Icons.jsx';
+import Icons from './Icons/Icons.jsx';
 
 const Footer = () => {
     return (
         <div className="Footer">
-            IconsPhotos 
+            <Icons/> 
         </div>
     )
 };

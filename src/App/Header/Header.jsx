@@ -2,23 +2,19 @@ import React from 'react';
 import './Header.scss';
 
 import Title from './Title/Title.jsx';
-
+import Flag from './Flag/Flag.jsx';
 
 
 
 const Header = () => {
     return (
-        
-        <div className="header">
-            <div className="comp">
-                < Title  />
-            </div>
-            {/* <div className="flag">
-                <img src = '/img/flag.png' alt = 'flag' />
-            </div> */}
+    <div className="header">
+        <div className="comp">
+            <Title/>
+            <Flag/>
         </div>
+    </div>
     )
 };
-
 export default Header;
 
