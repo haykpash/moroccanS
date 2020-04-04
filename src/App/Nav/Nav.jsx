@@ -27,7 +27,9 @@ const Nav = () => {
     }
     const handleNavLinkClick = () => {
         console.log('handleNavLinkClick clicked');
-        updateShowMenu(false);
+        if (window.innerWidth < 700) {
+            updateShowMenu(false);
+        }
     }
     useEffect (()=>{
         window.addEventListener('resize', handleWindowResize);

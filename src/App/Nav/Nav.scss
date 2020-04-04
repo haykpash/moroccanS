@@ -1,7 +1,9 @@
 .Nav {
+    
     //height: 80px;
     background:  #97D3C9;
     border-top: .02px  solid white;
+    
     .menubar {
         color: white;
         width: 22px;
@@ -27,6 +29,7 @@
             padding: 20px;
             display: inline-block;
             margin: 0px 60px 0px 60px;
+            border-bottom: 3px solid  #97D3C9;
             &:hover {
                 //transition: 1s;
                 border-bottom: 3px solid;
@@ -67,7 +70,7 @@
         height: 100%;
         
         .links {
-            //border-bottom: 2px rosybrown;
+            
             .link {
                 padding: 30px;
                 border-bottom: 3px solid ;
@@ -76,9 +79,3 @@
         }
     }
 }
-
-// @media screen and (max-width: 700px) {
-//     .Nav {
-//         //height: 100px;
-//     }
-// }
