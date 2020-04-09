@@ -1,6 +1,6 @@
 import React from 'react';
 import './Catalog.scss';
-
+import '../Pages.scss';
 
 
 const Catalog  = () => {

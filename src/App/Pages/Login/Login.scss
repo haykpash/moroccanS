@@ -1,3 +1,71 @@
-.Login {
 
+.Login {
+  
+  padding: 30px;
+  //min-height: 62vh;
+  &.form-invalid {
+    background: rgb(229, 238, 233) 
+  }
+  .error-message {
+    left: 50vh;
+    border: solid;
+    color: red;
+    padding: 5px;
+    margin-bottom: 50px;  
+    width: 300px;
+  } 
+  .form-group {
+    margin: 40px 40px 0px 40px;
+    margin-bottom: 20px;
+    //border: solid 2px rebeccapurple;
+    .left {
+      color:  #566573 ;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 10px;
+    }
+    input {
+      box-sizing: border-box;
+      font-size: 20px;
+      padding: 10px;
+      //width: 350px;
+    }
+    .pasword {
+      -webkit-text-security: disc;
+    }
+    &.invalid {
+      border: solid  red;   
+      background-color: rgb(255, 166, 166);         
+    }
+    button {
+      
+      background-color: #1C2833  ;
+      color:white;
+      border: none;
+      font-size: 20px;
+      line-height: 40px;
+      padding: 0px 20px;
+      
+      &:hover {
+          background-color: #566573;
+      }
+      &:active { 
+          background-color: white; 
+          color: rgb(61, 61, 134);
+      }
+      
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .Login {
+    border: rgb(67, 97, 6) solid 2px;
+    
+      .form-group {
+          display: flex;
+          
+          .left  { flex: 1; text-align: right; }
+          .right { flex: 2; }
+      }
+  }
 }

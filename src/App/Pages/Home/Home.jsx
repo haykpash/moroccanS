@@ -1,5 +1,6 @@
 import React, { useState, useEffect }from 'react';
 import './Home.scss';
+import '../Pages.scss';
 import API from '../../common/API.js';
 
 const ColorType = () => {

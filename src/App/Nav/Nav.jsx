@@ -45,8 +45,8 @@ const Nav = () => {
             <div className = "links" onClick = { handleNavLinkClick } >
                 <NavLink className='link' to='/'exact >home</NavLink>
                 <NavLink className='link' to='/catalog'>catalog</NavLink>
-                <NavLink className='link' to='/login'>log in</NavLink>
                 <NavLink className='link' to='/account'>create account</NavLink>
+                <NavLink className='link' to='/login'>log in</NavLink>
             </div>
             }
         </div>

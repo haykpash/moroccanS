@@ -5,8 +5,8 @@ import './Title.scss';
 
 const Title  = () => {
     return (
-        <div className="Title ">
-            MOROCCAN SENSE 
+        <div className="Title">
+            MOROCCAN SENSE U.S.
         </div>
     )
 };

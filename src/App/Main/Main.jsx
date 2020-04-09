@@ -11,14 +11,14 @@ const Main = () => {
     return (
         <div className="main">
             <Switch>
-                <Route path='/account' >
-                    <Account/>
+                <Route path='/login' >
+                    <Login/>
                 </Route>
                 <Route path='/catalog'>
                     <Catalog/>
                 </Route>
-                <Route path='/login'>
-                    <Login/>
+                <Route path='/account'>
+                    <Account/>
                 </Route>
                 <Route path='/'> 
                     

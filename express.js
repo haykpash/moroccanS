@@ -30,9 +30,9 @@ app.use((request, response, next) => {
 const routes = require('./express-routes/index.js');
 app.use('/api/icons', routes.icons);
 app.use('/api/praducts', routes.praducts);
-app.use('/api/flag', routes.flag);
-// app.use('/api/email', routes.email);
-// app.use('/api/login', routes.login);
+//app.use('/api/flag', routes.flag);
+app.use('/api/email', routes.email);
+//app.use('/api/login', routes.login);
 
 // Catchall for requests that do not match our routing
 app.get('*', (req, res) => { 
