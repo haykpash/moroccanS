@@ -6,6 +6,9 @@ import './Face.scss';
 const  Face = () => {
    return (
       <div className='blok2'>
+         <div className='photocontainer'>
+            <img src="/img/photos/face_care.JPG" alt='face' />
+         </div>
          <div className='texcontainer'>
             <div className='insidetexcontainer'>
                   <div>
@@ -20,9 +23,6 @@ const  Face = () => {
                   </p>
                </div>
             </div>
-         </div>
-         <div className='photocontainer'>
-            <img src="/img/photos/face_care.JPG" alt='face' />
          </div>
       </div>
    )

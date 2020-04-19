@@ -3,9 +3,11 @@
   padding:  50px 100px;
   display: flex;
   .texcontainer {
-    width: 100%;
+    width: 80%;
     background-color: rgb(237, 237, 222);
     .insidetexcontainer {
+      display: flex;
+      flex-direction: column;
       padding: 40px 70px 40px 70px;
       margin: 0px;
       height: 80%;
@@ -20,12 +22,13 @@
         }
       }
       p {
+        //float: left;
         height: 50%;
         margin: 0px;
         color:  rgb(95, 61, 2);
         font-size: 20px ;
         text-align: left;
-        max-width: 60%;
+        //max-width: 60%;
         padding: 30px;
         
       }
@@ -42,7 +45,7 @@
 }
 @media screen and (max-width: 768px ) {
   .blok1 {
-    padding: 70px;
+    padding: 50px 50px 30px 50px;
     display: block;
     .texcontainer {
       width: 100%;
@@ -54,6 +57,7 @@
         }
         h1 {
           text-align: center;
+          padding-top: 50px;
         }
       }
     }

@@ -16,7 +16,7 @@ const  Hair = () => {
                   </div>
                <div>
                   <p>
-                     product description goes her, 
+                     Product description goes her, 
                      you can see all ditails and 
                      descriptions, farther instruction
                      you can see on prudoct lable.

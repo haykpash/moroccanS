@@ -1,5 +1,6 @@
 
 .Login {
+  
   min-height: 60vh;
   //overflow: auto;
   .form-invalid {
@@ -63,11 +64,14 @@
 }
 @media screen and (max-width: 768px) {
   .Login {
+    height: 65vh;
     .form-group {
-      margin-left: 30%;
+      //margin-left: 30%;
+      display: grid;
+      
     }
     .error-message {
-
+    
     }
   }
 }

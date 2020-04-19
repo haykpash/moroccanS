@@ -42,7 +42,7 @@
 }
 @media screen and (max-width: 768px ) {
   .blok3 {
-    padding: 70px;
+    padding: 50px 50px 30px 50px;
     display: block;
     .texcontainer {
       width: 100%;
@@ -54,6 +54,7 @@
         }
         h1 {
           text-align: center;
+          padding-top: 50px;
         }
       }
     }
