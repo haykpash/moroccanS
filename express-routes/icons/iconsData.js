@@ -7,10 +7,6 @@ module.exports = [
         img: '/img/photosSVG/instagram.png',
         name: 'instagram',
     },
-    {
-        img: '/img/photosSVG/twitter.png',
-        name: 'twitter',
-    },
     // {
     //     image: '/img/Staff/staff-4.jpeg',
     // },

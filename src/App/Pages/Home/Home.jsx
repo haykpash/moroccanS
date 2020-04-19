@@ -1,37 +1,42 @@
-import React, { useState, useEffect }from 'react';
-import './Home.scss';
-import '../Pages.scss';
-import API from '../../common/API.js';
+import React from 'react';
+//import './Home.scss';
+//import '../Pages.scss';
 
-const ColorType = () => {
-    
-    // 1. set up state to keep trak of data from server
-    const [colorType, setcolorType] = useState([ ]);
-    
-    // only do thius on moment.
-    useEffect(() => {
-    // 2. retrieve the data from the server 
-    API.get('praducts').then((result) => {
-        // 3. upsate colotrType with data from server
-        console.log('Color Response', result);
-        setcolorType(result.data);
-    }); 
-    }, [])
-    return colorType.map((colorType, idx) => {
-        return (
-        <div  key={ idx } className='phototypes'>
-            <img src={ colorType.img } alt={colorType.name } />
-        </div>
-        );
-    });
-}
+import Face from './Face/Face.jsx';
+import Hair from './Hair/Hair.jsx';
+import Body from './Body/Body.jsx';
 
-const Colors = () => {
+const  Home = () => {
   return (
-    <div >
-      <ColorType />
-    </div>
-  )
+    <div>
+      <Hair />
+      <Face />
+      <Body />
+      </div>
+    // <div   className='phototypes'>
+    //   <div className='bloks'>
+    //     <div className='body-care'>
+    //       <img src="/img/photos/body_care.jpeg" alt='body'/>
+    //     </div>
+    //     <div className='body-care-text'>
+    //       <h1>body care</h1>
+    //     </div>
+    //   </div>
+    //   <div>
+    //     <div>
+    //       <div className='face-care'>
+    //         <img src="/img/photos/face_care.JPG" alt='face' />
+    //       </div>
+    //     </div>
+    //   </div>
+    //   <div>
+    //     <div>
+    //       <div className='hair-care'>
+    //         <img src="/img/photos/hair_care.JPG" alt='hair' />
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+  );
 }
-
-export default Colors;
+export default Home;

@@ -1,0 +1,67 @@
+.blok1 {
+  background-color: rgb(237, 237, 222);
+  padding:  50px 100px;
+  display: flex;
+  .texcontainer {
+    width: 100%;
+    background-color: rgb(237, 237, 222);
+    .insidetexcontainer {
+      padding: 40px 70px 40px 70px;
+      margin: 0px;
+      height: 80%;
+      h1 {
+        color: rgb(95, 61, 2);
+        padding: 30px;
+        height: 50%;
+        margin: 0px;
+        font-size: 35px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      p {
+        height: 50%;
+        margin: 0px;
+        color:  rgb(95, 61, 2);
+        font-size: 20px ;
+        text-align: left;
+        max-width: 60%;
+        padding: 30px;
+        
+      }
+    }
+  }
+  .photocontainer {
+      width:  50%;
+    img {
+      width: 100% ;
+      height: auto;
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 768px ) {
+  .blok1 {
+    padding: 70px;
+    display: block;
+    .texcontainer {
+      width: 100%;
+      overflow: auto;
+      .insidetexcontainer {
+        padding: 0px;
+        p {
+          display: none;
+        }
+        h1 {
+          text-align: center;
+        }
+      }
+    }
+    .photocontainer {
+      
+      width: 100%;
+      img {
+      }
+    }
+  }
+}

@@ -1,8 +1,9 @@
 .Nav {
     
     height: 80px;
-    background:  #97D3C9;
-    border-top: .02px  solid white;
+    //background:  #97D3C9;
+    background-color:  rgb(178, 213, 207);
+    //border-top: .09px  solid white;
     
     .menubar {
         color: white;
@@ -29,7 +30,7 @@
             padding: 20px;
             display: inline-block;
             margin: 0px 60px 0px 60px;
-            border-bottom: 3px solid  #97D3C9;
+            background-color:  rgb(178, 213, 207);
             &:hover {
                 //transition: 1s;
                 border-bottom: 3px solid;

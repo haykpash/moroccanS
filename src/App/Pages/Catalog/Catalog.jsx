@@ -4,6 +4,10 @@ import '../Pages.scss';
 
 
 const Catalog  = () => {
+    
+
+
+
     return (
         <div className="Catalog">
             Catalog 
@@ -12,3 +16,4 @@ const Catalog  = () => {
 };
 
 export default Catalog;
+

@@ -3,8 +3,8 @@ const router = express.Router();
 
 const praducts = require('./praductsData.js');
 
-router.get('/', (req,res) => { 
-    res.json(praducts);
+router.get('/photos', (req,res) => { 
+    res.json(praducts.photos);
     console.log('Retreived Praducts'); 
 });
 

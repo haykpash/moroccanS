@@ -21,7 +21,6 @@ const Main = () => {
                     <Account/>
                 </Route>
                 <Route path='/'> 
-                    
                     <Home/>
                 </Route>
             </Switch>
@@ -29,5 +28,4 @@ const Main = () => {
         </div>
     )
 };
-
 export default Main;
