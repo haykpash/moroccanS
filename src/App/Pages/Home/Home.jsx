@@ -1,4 +1,5 @@
 import React from 'react';
+import Slideshow from './Slideshow/Slideshow.jsx';
 //import './Home.scss';
 //import '../Pages.scss';
 
@@ -9,6 +10,7 @@ import Body from './Body/Body.jsx';
 const  Home = () => {
   return (
     <div>
+      <Slideshow/>
       <Hair />
       <Face />
       <Body />

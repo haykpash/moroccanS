@@ -1,8 +1,8 @@
 module.exports = [
-    {
-        img: '/img/photosSVG/facebook.png', 
-        name: 'facebook',
-    },
+    // {
+    //     img: '/img/photosSVG/facebook.png', 
+    //     name: 'facebook',
+    // },
     {
         img: '/img/photosSVG/instagram.png',
         name: 'instagram',
