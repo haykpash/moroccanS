@@ -6,12 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Nav = () => {
-
+    
     const [showMenu, updateShowMenu] = useState(false);
-
     const handleMenubarClick = () => {
         console.log('Menubar Click');
-
         if (showMenu === false) {
             updateShowMenu(true);
         } else {
@@ -52,5 +50,4 @@ const Nav = () => {
         </div>
     )
 };
-
 export default Nav;

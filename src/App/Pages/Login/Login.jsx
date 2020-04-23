@@ -1,19 +1,3 @@
-// import React from 'react';
-// import './Login.scss';
-
-
-
-// const Login  = () => {
-//     return (
-//         <div className="Login">
-//             Login 
-//         </div>
-//     )
-// };
-
-// export default Login;
-
-
 import React, {useRef, useState} from 'react';
 import './Login.scss';
 import '../Pages.scss';

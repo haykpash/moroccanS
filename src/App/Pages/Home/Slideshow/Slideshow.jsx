@@ -47,7 +47,6 @@ const Slideshow = () => {
             }
         )
     }
-    
     return(
     <div className={'Slideshow'}>
         <Carousel
@@ -59,9 +58,7 @@ const Slideshow = () => {
         >
             {renderSlides()}
         </Carousel>
-        
     </div>
     );
 }
-
 export default Slideshow;

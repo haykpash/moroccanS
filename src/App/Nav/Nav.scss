@@ -1,29 +1,21 @@
 .Nav {
-    
     height: 80px;
-    //background:  #97D3C9;
-    //background-color:  rgb(178, 213, 207);
-    //border-top: .09px  solid white;
     background-color: #4e8278;
     .menubar {
         color: #ffffff;
         width: 22px;
-        //height: 27px;
         position: absolute;
         top: 12px;
         left: 13px;
-        
         svg {
             width: 100%;
             height: auto;
         }
     }
-    
     .links {
         text-align: center;
         font-size: 30px;
         font-style: italic;
-        
         .link {
             color:#ffffff;
             text-decoration: none;
@@ -32,10 +24,8 @@
             margin: 0px 60px 0px 60px;
             background-color:  #4e8278;
             &:hover {
-                //transition: 1s;
                 border-bottom: 3px solid;
             }
-            //&:active { border-bottom: 3px solid;}
         }
     }
 }

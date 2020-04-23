@@ -1,8 +1,6 @@
 
 .Login {
-  
   min-height: 60vh;
-  //overflow: auto;
   .form-invalid {
     background: rgb(229, 238, 233); 
   }
@@ -41,7 +39,6 @@
       font-size: 20px;
       line-height: 40px;
       padding: 0px 20px;
-      
       &:hover {
           background-color: #566573;
       }
@@ -55,23 +52,20 @@
 }
 @media screen and (min-width: 768px) {
   .Login {
-      .form-group {
-          display: flex;
-          .left  { flex: 1; text-align: right; }
-          .right { flex: 2; }
-      }
+    .form-group {
+        display: flex;
+        .left  { flex: 1; text-align: right; }
+        .right { flex: 2; }
+    }
   }
 }
 @media screen and (max-width: 768px) {
   .Login {
     height: 65vh;
     .form-group {
-      //margin-left: 30%;
       display: grid;
-      
     }
     .error-message {
-    
     }
   }
 }

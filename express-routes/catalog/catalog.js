@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-const flag = require('./flagData.js');
+const catalog = require('./catalogData.js');
 
 router.get('/', (req,res) => { 
-    res.json(flag);
-    console.log('Retreived Flag'); 
+    res.json(catalog);
+    console.log('Retreived Catalog'); 
 });
 
 module.exports = router;

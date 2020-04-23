@@ -2,7 +2,6 @@ import React from 'react';
 import './Body.scss';
 //import '../Pages.scss';
 
-
 const  Body = () => {
    return (
       <div className='blok3'>
