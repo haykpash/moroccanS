@@ -1,8 +1,22 @@
 .Footer {
-    background: #4e8278;
-    position: relative;
-    bottom:0;
+    background-color: #4e8278;
     height:150px;
-    margin-bottom: 0px;
-    overflow: auto;
+    display: flex;
+        justify-content: center;
+    .icons {
+        display: flex;
+        align-items: center;
+        a {
+            color: #ffffff;
+            width: 45px;
+            margin: 30px;
+            &:hover {
+                color: rgb(135, 240, 230);
+            }
+        }
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    }
 }

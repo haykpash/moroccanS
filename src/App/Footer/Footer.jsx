@@ -1,16 +1,21 @@
 import React from 'react';
 import './Footer.scss';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookSquare  } from '@fortawesome/free-brands-svg-icons';
+import {  faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-//import Snow from './Snow/Snow.jsx';
-import Icons from './Icons/Icons.jsx';
+
 
 const Footer = () => {
     return (
         <div className="Footer">
-            <a href="https://www.instagram.com/moroccansense.us/">
-            <Icons/> 
-            </a>
+            <div className="icons">
+                <a href="https://m.facebook.com/moroccansense">
+                    <FontAwesomeIcon icon={ faFacebookSquare } /></a>
+                <a href="https://www.instagram.com/moroccansense.us/">
+                    <FontAwesomeIcon icon={ faInstagram } /></a>
+            </div>
         </div>
     )
 };

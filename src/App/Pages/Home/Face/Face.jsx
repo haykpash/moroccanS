@@ -8,6 +8,7 @@ const  Face = () => {
       <div className='blok2'>
          <div className='photocontainer'>
             <img src="/img/photos/face_care.JPG" alt='face' />
+            <h1>Face care</h1>
          </div>
          <div className='texcontainer'>
             <div className='insidetexcontainer'>

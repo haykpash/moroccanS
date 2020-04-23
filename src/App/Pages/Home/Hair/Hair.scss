@@ -12,9 +12,7 @@
       margin: 0px;
       height: 80%;
       h1 {
-        
         color: rgb(95, 61, 2);
-        
         padding: 30px;
         height: 50%;
         margin: 0px;
@@ -24,13 +22,11 @@
         }
       }
       p {
-        //float: left;
         height: 50%;
         margin: 0px;
         color:  rgb(95, 61, 2);
         font-size: 20px ;
         text-align: left;
-        //max-width: 60%;
         padding: 30px;
         
       }
@@ -38,7 +34,9 @@
   }
   .photocontainer {
       width:  50%;
-      
+      h1 {
+        // display: none;
+      }
     img {
       width: 100% ;
       height: auto;
@@ -60,16 +58,37 @@
           display: none;
         }
         h1 {
-          text-align: center;
-          padding-top: 50px;
+          display: none;
         }
       }
     }
     .photocontainer {
+      position: relative;
       
+      h1 {
+        position: absolute;
+        color: #2f5e55;
+        bottom: 1px;
+        text-align: center;
+        font-size: 270%;
+        background-color: rgba(white, 0.7);
+        width: 100%;
+      }
       width: 100%;
       img {
       }
     }
   }
 }
+@media screen and (min-width: 768px ) {
+  .blok1 {
+    .photocontainer {
+      h1 {
+        display: none;
+      }
+      img {
+      }
+    }
+  }
+}
+

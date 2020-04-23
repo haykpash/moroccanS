@@ -24,8 +24,7 @@
          margin: 0px;
          color:  rgb(95, 61, 2);
          font-size: 20px;
-         text-align: left;
-         max-width: 80%;
+         text-align: left;      //max-width: 80%;
          padding: 30px;
          }
       }
@@ -52,17 +51,35 @@
                display: none;
             }
             h1 {
-               text-align: center;
-               //align-items: center;
-               padding-top: 50px;
+               display: none;
             }
          }
       }
-      .photocontainer {
+   .photocontainer {
+      position: relative;
+      
+      h1 {
+         position: absolute;
+         color: #2f5e55;
+         bottom: 1px;
+         text-align: center;
+         font-size: 270%;
+         background-color: rgba(white, 0.7);
          width: 100%;
+      }
+      width: 100%;
+      img {
+      }
+      }
+   }
+}
+@media screen and (min-width: 768px ) {
+   .blok2 {
+      .photocontainer {
+         h1 {
+         display: none;
+         }
          img {
-         //box-sizing: inherit;
-         //height: auto;
          }
       }
    }
