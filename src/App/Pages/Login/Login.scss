@@ -1,6 +1,6 @@
 
 .Login {
-  min-height: 60vh;
+  min-height: 55.5vh;
   border: rgb(229, 238, 233) .1px solid;
   
   .form-invalid {
@@ -8,17 +8,17 @@
   }
   .error-message {
     position: absolute;
-    left: 30%;
+    left: 32%;
     color: red;
   } 
   .container3 { 
-    margin-top: 7%;
-    display: flex; 
-    flex-direction: column;
+    margin-top: 90px;
+    // display: flex; 
+    // flex-direction: column;
+    
   .form-group {
     align-items: center;
     margin: 40px 40px 0px 40px;
-    margin-bottom: 20px;
     .left {
       color:  #566573 ;
       font-weight: bold;
@@ -60,16 +60,26 @@
   .Login {
     .form-group {
         display: flex;
-        .left  { flex: 1; text-align: right; }
+        .left  { flex: 1 ; text-align: right; }
         .right { flex: 2; }
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .Login {
-    height: 65vh;
+    height: 70vh;
+    .error-message {
+      //position: absolute;
+      left: calc(50% - 150px);
+      width: 303px;
+      //border: grey solid;
+      margin: 0 auto;
+    }
+    .container3 {
+      max-width: 300px;
+      margin: 90px auto;
+    }
     .form-group {
-      display: grid;
     }
     .error-message {
     }
