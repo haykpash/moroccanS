@@ -99,6 +99,7 @@ const Login = () => {
                 </ul>
             </div>
             }
+            <div className="container3">
             <div className="form-group">
                 <div className="left">
                     <label htmlFor="email"> Email</label>
@@ -135,7 +136,8 @@ const Login = () => {
                         >Login
                     </button>
                 </div>
-            </div>     
+            </div> 
+            </div>    
         </div>
     );
 }

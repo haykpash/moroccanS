@@ -10,21 +10,15 @@ const  Face = () => {
             <img src="/img/photos/face_care.JPG" alt='face' />
             <h1>Face care</h1>
          </div>
-         <div className='texcontainer'>
-            <div className='insidetexcontainer'>
-                  <div>
+         <div className='textcontainer'>
                      <h1>Face care</h1>
-                  </div>
-               <div>
                   <p>
                      product description goes her, 
                      you can see all ditails and 
                      descriptions, farther instruction
                      you can see on prudoct lable.
                   </p>
-               </div>
             </div>
-         </div>
       </div>
    )
 }

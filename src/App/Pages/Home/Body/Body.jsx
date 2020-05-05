@@ -9,20 +9,14 @@ const  Body = () => {
             <img src="/img/photos/body_care.jpeg" alt='body'/>
             <h1>Body care</h1>
          </div>
-         <div className='texcontainer'>
-            <div className='insidetexcontainer'>
-               <div>
-                  <h1>Body care</h1>
-               </div>
-               <div>
-                  <p>
-                     product description goes her, 
-                     you can see all ditails and 
-                     descriptions, farther instruction
-                     you can see on prudoct lable.
-                  </p>
-               </div>
-            </div>
+         <div className='textcontainer'>
+            <h1>Body care</h1>
+            <p>
+               product description goes her, 
+               you can see all ditails and 
+               descriptions, farther instruction
+               you can see on prudoct lable.
+            </p>
          </div>
       </div>
    )

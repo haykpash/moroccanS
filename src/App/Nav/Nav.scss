@@ -24,7 +24,8 @@
             margin: 0px 60px 0px 60px;
             background-color:  #4e8278;
             &:hover {
-                border-bottom: 3px solid;
+                border-bottom: 4px solid;
+                
             }
         }
     }
@@ -48,18 +49,22 @@
         }
     }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
     .Nav {
+        .links {
+            .link {
+                
+            }
+        }
         .menubar {
             display: none;
         }
     }
 }
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 768px) {
     .Nav {
         height: 0px;
         height: 100%;
-        
         .links {
             
             .link {
@@ -67,6 +72,20 @@
                 border-bottom: 3px solid ;
                 display: block;
             }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .Nav {
+        height: 0px;
+        height: 100%;
+        .links {
+            .link {
+                
+            }
+        }
+        .menubar {
+            
         }
     }
 }

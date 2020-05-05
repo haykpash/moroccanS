@@ -10,20 +10,14 @@ const  Hair = () => {
             <img src="/img/photos/hair_care.JPG" alt='hair' />
             <h1>Hair care</h1>
          </div>
-         <div className='texcontainer'>
-            <div className='insidetexcontainer'>
-                  <div>
-                     <h1>Hair care</h1>
-                  </div>
-               <div>
-                  <p>
-                     Product description goes her, 
-                     you can see all ditails and 
-                     descriptions, farther instruction
-                     you can see on prudoct lable.
-                  </p>
-               </div>
-            </div>
+         <div className='textcontainer'>
+            <h1>Hair care</h1>
+            <p>
+               Product description goes her, 
+               you can see all ditails and 
+               descriptions, farther instruction
+               you can see on prudoct lable.
+            </p>
          </div>
       </div>
    )

@@ -17,7 +17,7 @@ const Nav = () => {
         }
     }
         const handleWindowResize = () => {
-        if (window.innerWidth > 700) {
+        if (window.innerWidth > 768) {
             updateShowMenu(true);
         } else {
             updateShowMenu(false);
@@ -25,7 +25,7 @@ const Nav = () => {
     }
     const handleNavLinkClick = () => {
         console.log('handleNavLinkClick clicked');
-        if (window.innerWidth < 700) {
+        if (window.innerWidth < 768) {
             updateShowMenu(false);
         }
     }
