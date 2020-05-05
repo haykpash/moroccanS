@@ -13,9 +13,6 @@
   } 
   .container3 { 
     margin-top: 90px;
-    // display: flex; 
-    // flex-direction: column;
-    
   .form-group {
     align-items: center;
     margin: 40px 40px 0px 40px;
@@ -67,12 +64,10 @@
 }
 @media screen and (max-width: 767px) {
   .Login {
-    height: 70vh;
+    min-height: calc(100vh - 250px);
     .error-message {
-      //position: absolute;
       left: calc(50% - 150px);
       width: 303px;
-      //border: grey solid;
       margin: 0 auto;
     }
     .container3 {
