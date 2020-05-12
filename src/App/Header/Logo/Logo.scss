@@ -1,0 +1,16 @@
+.Logo {
+   img {
+      margin-top: 10%;
+      background-color:  #d7b272;
+      height: 70px;
+      width: auto;
+   }
+}
+@media screen and (max-width: 768px) {
+   .Logo {
+      img {
+         height: 40px;
+         //width: auto;
+      }
+   }
+}

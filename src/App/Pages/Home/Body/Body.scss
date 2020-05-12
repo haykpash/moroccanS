@@ -5,6 +5,7 @@
   display: flex;
     .photocontainer {
       flex: 1 1 0;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
     img {
       width: 100% ;
       height: auto;
@@ -69,13 +70,16 @@
       width: 100%;
       position: relative;
       h1 {
+        left: 50%;
+        transform: translate( -50%);
+        width: 80%;
         position: absolute;
         color: #2f5e55;
         bottom: 1px;
         text-align: center;
         font-size: 270%;
         background-color: rgba(white, 0.7);
-        width: 100%;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
       }
       width: 100%;
       img {

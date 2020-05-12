@@ -1,11 +1,15 @@
 .shoppingbag{
-   color: #ffffff;
+   color: #e9fffa;
    font-size: 22px;
    position: absolute;
-   top: 2%;
+   top: 12px;
    right: 3%;
    svg {
       width: 100%;
       height: auto;
    }
+}
+.shoppingbag::before {
+   content: '* ';
+   color: silver;
 }

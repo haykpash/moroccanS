@@ -1,10 +1,14 @@
 .header {
     height: 140px;
-    background-color: #4e8278;
+    //background-color: #4e8278;
+    background-color: #2e8577;
     .comp {
-        padding: 20px 20px;
+        //padding: 20px 20px;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        
     }
 }
 @media screen and (max-width: 768px) {
