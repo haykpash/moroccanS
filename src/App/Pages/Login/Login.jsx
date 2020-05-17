@@ -128,7 +128,7 @@ const Login = () => {
             </div>
             <div className="form-group">
                 <div className="left" />
-                <div className="right">
+                <div className="right button">
                     <button
                         tab-index={0}
                         onClick={ handleFormSubmit }

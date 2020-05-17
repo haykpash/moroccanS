@@ -2,18 +2,27 @@
 .Login {
   min-height: calc(100vh - 370px);
   border: rgb(229, 238, 233) .1px solid;
-  
+  background-color: whitesmoke;
   .form-invalid {
     background: rgb(229, 238, 233); 
   }
   .error-message {
     position: absolute;
-    left: 32%;
+    left: 50%;
+    transform: translate(-50%);
     color: red;
   } 
   .container3 { 
-    margin-top: 90px;
+    box-shadow: 0 0px 4px 0 rgba(0,0,0,0.50);
+    padding: 10px 0px;
+    background-color: white;
+    margin: 90px 0px 0px 0px;
+    width: 400px;
+    margin-left: 50%;
+    transform: translate(-50%);
   .form-group {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 40px 40px 0px 40px;
     .left {
@@ -21,8 +30,13 @@
       font-weight: bold;
       font-size: 20px;
       padding: 10px;
+      flex: 1;
+    }
+    .right {
+      flex: 2;
     }
     input {
+
       box-sizing: border-box;
       font-size: 20px;
       padding: 10px;
@@ -35,6 +49,7 @@
       background-color: rgb(255, 166, 166);  
     }
     button {
+      box-shadow: 0 0px 2px 0 rgba(0,0,0,0.50);
       background-color: rgb(75, 114, 110)  ;
       color:white;
       border: none;
@@ -48,33 +63,40 @@
           background-color: white; 
           color: rgb(61, 61, 134);
       }
-      
     }
   }
 }
 }
-@media screen and (min-width: 768px) {
-  .Login {
-    .form-group {
-        display: flex;
-        .left  { flex: 1 ; text-align: right; }
-        .right { flex: 2; }
-    }
-  }
-}
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .Login {
     min-height: calc(100vh - 250px);
+  //   .form-group {
+  //       display: flex;
+  //       .left  { flex: 1 ; text-align: right; }
+  //       .right { flex: 2; }
+  //   }
+  }
+}
+@media screen and (max-width: 550px) {
+  .Login {
+    //min-height: calc(100vh - 250px);
     .error-message {
-      left: calc(50% - 150px);
       width: 303px;
-      margin: 0 auto;
     }
     .container3 {
       max-width: 300px;
-      margin: 90px auto;
+      .form-group {
+        .button {
+          //border: solid red;
+          flex: 1.5 0 auto;
+          
+        }
+      }
     }
     .form-group {
+      button {
+        border: solid red;
+      }
     }
     .error-message {
     }

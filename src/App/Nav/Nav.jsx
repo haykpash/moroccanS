@@ -33,9 +33,9 @@ const Nav = () => {
         window.addEventListener('resize', handleWindowResize);
         handleWindowResize();
     },[]);
-    const accountAllartHandeler = () => {
-        alert('Coming soon :)');
-    }
+    // const accountAllartHandeler = () => {
+    //     alert('Coming soon :)');
+    // }
     return (
         <div className = "Nav" >
             <div className = 'menubar' onClick = { handleMenubarClick }>
@@ -46,7 +46,7 @@ const Nav = () => {
             <div className = "links" onClick = { handleNavLinkClick } >
                 <NavLink className='link' to='/'exact >home</NavLink>
                 <NavLink className='link' to='/catalog'>catalog</NavLink>
-                <NavLink className='link' to='/account' onClick = { accountAllartHandeler }>create account</NavLink>
+                <NavLink className='link' to='/account'>create account</NavLink>
                 <NavLink className='link' to='/login'>log in</NavLink>
             </div>
             }

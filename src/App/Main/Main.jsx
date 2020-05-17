@@ -3,7 +3,7 @@ import './Main.scss';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from '../Pages/Home/Home.jsx';
-//import Account from '../Pages/Account/Account.jsx';
+import Account from '../Pages/Account/Account.jsx';
 import Catalog from '../Pages/Catalog/Catalog.jsx';
 import Login from '../Pages/Login/Login.jsx';
 
@@ -17,9 +17,9 @@ const Main = () => {
                 <Route path='/catalog'>
                     <Catalog/>
                 </Route>
-                {/* <Route path='/account'>
+                <Route path='/account'>
                     <Account/>
-                </Route> */}
+                </Route>
                 <Route path='/'> 
                     <Home/>
                 </Route>

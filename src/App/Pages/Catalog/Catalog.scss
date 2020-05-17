@@ -5,10 +5,15 @@
    justify-content: space-evenly;
 }
 .catalogPhoto {
+   border: gainsboro 1px solid;
    margin: 20px;
+   height: fit-content;
    img {
       width: 300px;
       display: block;
+      &:hover {
+         opacity: .8;
+      }
    }
    p {
       text-align: center;
@@ -19,17 +24,14 @@
       margin: 10px;
       img {
          width: 250px;
-         display: block;
       }
    }
 }
 @media screen and (max-width: 510px ) {
    .catalogPhoto {
-      
       margin: 20px 10px 10px 10px;
       img {
          width: 150px;
-         display: block;
       }
    }
 }
