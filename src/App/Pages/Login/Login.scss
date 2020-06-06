@@ -2,7 +2,7 @@
 .Login {
   min-height: calc(100vh - 370px);
   border: rgb(229, 238, 233) .1px solid;
-  background-color: whitesmoke;
+  background: whitesmoke;
   .form-invalid {
     background: rgb(229, 238, 233); 
   }
@@ -21,17 +21,20 @@
     margin-left: 50%;
     transform: translate(-50%);
   .form-group {
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin: 40px 40px 0px 40px;
     .left {
+      min-width: 20px;
       color:  #566573 ;
       font-weight: bold;
       font-size: 20px;
       padding: 10px;
       flex: 1;
     }
+
     .right {
       flex: 2;
     }

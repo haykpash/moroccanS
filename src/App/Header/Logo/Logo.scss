@@ -1,9 +1,10 @@
 .Logo {
    img {
       margin-top: 10%;
-      background-color:  #d7b272;
+      //background-color:  #d7b272;
       height: 70px;
       width: auto;
+      background: linear-gradient(to right , #302004 10%  , #e4ba72 , #5a3b05  );
    }
 }
 @media screen and (max-width: 768px) {

@@ -9,14 +9,14 @@ import Footer from './Footer/Footer.jsx';
 
 const App = () => {
     return (
-    <Router>
-        <div className = "App" >
+        <Router>
+            <div className = "App" >
                 < Header />
                 < Nav />
                 < Main />
                 < Footer />
-        </div>
-    </Router>
+            </div>
+        </Router>
     )
 };
 export default App;

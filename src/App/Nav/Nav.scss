@@ -3,10 +3,15 @@
     background-color: #2e8577;
     .menubar {
         color: #e9fffa;
-        width: 22px;
+        width: 1em;
         position: absolute;
         top: 12px;
         left: 13px;
+        border-radius: 5px;
+        border: solid #98b4ae 1px;
+        padding: 2px 7px 0px 7px;
+        background-color: #388f80;
+        box-shadow: 0 1px 5px 0 rgba(0,0,0,0.50);
         svg {
             width: 100%;
             height: auto;

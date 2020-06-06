@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hair.scss';
+import { NavLink } from 'react-router-dom';
 //import '../Pages.scss';
-
 
 const  Hair = () => {
    return (
@@ -11,7 +11,12 @@ const  Hair = () => {
             <h1>Hair care</h1>
          </div>
          <div className='textcontainer'>
-            <h1>Hair care</h1>
+            <h1>
+               <NavLink 
+               className="navlink" 
+               to='/hairphotos'
+               >Hair care</NavLink>
+            </h1>
             <p>
                Product description goes her, 
                you can see all ditails and 
@@ -23,3 +28,5 @@ const  Hair = () => {
    )
 }
 export default Hair;
+
+//<NavLink to='/hairphotos'>Hair care</NavLink>

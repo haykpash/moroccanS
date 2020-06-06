@@ -18,6 +18,11 @@
         padding: 10px;
         flex: 1 ;
       }
+      label::after {
+        content: ' *';
+        color: #566573;
+        font-size: 17px;
+      }
       .right {
         flex: 2 ;
         display: flex;

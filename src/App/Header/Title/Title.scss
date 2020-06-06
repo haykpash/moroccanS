@@ -6,6 +6,11 @@
     letter-spacing: 15px;
     font-family: 'Alata', sans-serif;
     font-size: 40px;
+    span {
+        background: linear-gradient(to right, #c69849  , #d7b272 , #79510b  );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 @media screen and (max-width: 1050px) {
     .Title {
@@ -13,10 +18,10 @@
         letter-spacing: 10px;
     }
 }
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 768px) {
     .Title {
         font-size: 22px;
-        //font-weight:bold;
         letter-spacing: 5px;
+
     }
 }

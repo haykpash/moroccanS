@@ -1,6 +1,7 @@
 import React from 'react';
 import './Body.scss';
 //import '../Pages.scss';
+import { NavLink } from 'react-router-dom';
 
 const  Body = () => {
    return (
@@ -10,7 +11,12 @@ const  Body = () => {
             <h1>Body care</h1>
          </div>
          <div className='textcontainer'>
-            <h1>Body care</h1>
+         <h1>
+               <NavLink 
+               className="navlink" 
+               to='/bodyphotos'
+               >Body care</NavLink>
+            </h1>
             <p>
                product description goes her, 
                you can see all ditails and 

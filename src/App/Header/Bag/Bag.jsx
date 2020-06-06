@@ -8,6 +8,7 @@ const Bag = () => {
 return (
       <div className='shoppingbag'>
          <FontAwesomeIcon icon={ faShoppingBag } /> 
+         <span>#</span>
       </div>
    )
 }
