@@ -9,10 +9,15 @@ const  Face = () => {
       <div className='blok2'>
          <div className='photocontainer'>
             <img src="/img/photos/face_care.JPG" alt='face' />
-            <h1>Face care</h1>
+            <h1>
+               <NavLink 
+               className="navlink" 
+               to='/facephotos'
+               >Face care</NavLink>
+            </h1>
          </div>
          <div className='textcontainer'>
-         <h1>
+            <h1>
                <NavLink 
                className="navlink" 
                to='/facephotos'

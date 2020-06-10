@@ -8,10 +8,15 @@ const  Body = () => {
       <div className='blok3'>
          <div className='photocontainer'>
             <img src="/img/photos/body_care.jpeg" alt='body'/>
-            <h1>Body care</h1>
+            <h1>
+               <NavLink 
+               className="navlink" 
+               to='/bodyphotos'
+               >Body care</NavLink>
+            </h1>
          </div>
          <div className='textcontainer'>
-         <h1>
+            <h1>
                <NavLink 
                className="navlink" 
                to='/bodyphotos'
