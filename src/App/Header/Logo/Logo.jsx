@@ -6,7 +6,7 @@ import './Logo.scss';
 const Logo  = () => {
    return (
       <div className="Logo">
-         <img src='/img/Logo/Logo_img.png' alt='logo'/>
+         <img src='/img/Logo/Logo_img.jpeg' alt='logo'/>
       </div>
    )
 };
