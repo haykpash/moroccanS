@@ -61,13 +61,15 @@
    .blok2 {
       flex-direction: column;
       padding: 10%;
+      padding-bottom: 0px;
       .textcontainer {
+         border-bottom: solid grey 1px ;
          align-items: center;
          h1 {
          display: none;
          }
          p {
-         margin: 40px 0px 0px 0px ;
+         margin: 40px 0px 40px 0px ;
          }
       }
       .photocontainer {

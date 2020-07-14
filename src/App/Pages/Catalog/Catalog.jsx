@@ -15,6 +15,7 @@ const CatalogP = () => {
         setCatalogPhotos(result.data);
     });
     }, [])
+    
     return catalogPhotos.map((catalogPhoto, ikx) => {
         return (
             <div key={ ikx } className='catalogPhoto'>

@@ -2,14 +2,17 @@ module.exports = [
     {
         img: '/img/Catalog/IMG_1.JPG',
         name: 'Price',
+        category: 'Body',
     },
     {
         img: '/img/Catalog/IMG_2.JPG',
         name: 'Price',
+        category: 'Body',
     },
     {
         img: '/img/Catalog/IMG_3.JPG',
         name: 'Price',
+        category: 'Body',
     },
     {
         img: '/img/Catalog/IMG_4.JPG',
