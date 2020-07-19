@@ -33,5 +33,3 @@ const  Hair = () => {
    )
 }
 export default Hair;
-
-//<NavLink to='/hairphotos'>Hair care</NavLink>
