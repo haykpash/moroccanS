@@ -31,6 +31,9 @@
             &:hover {
                 border-bottom: 4px solid;
             }
+            &.active {
+                border-bottom: 4px solid rgb(247, 85, 85);
+            }
         }
     }
 }
