@@ -5,17 +5,32 @@
    justify-content: space-evenly;
 }
 .catalogPhoto {
-   border: gainsboro 1px solid;
+   //box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+   //background-color: white;
+   //border: gainsboro 1px solid;
    margin: 20px;
    height: fit-content;
    img {
+      //border-radius: 5px;
       width: 300px;
       display: block;
       &:hover {
          opacity: .8;
       }
    }
+   .new {
+      color: green;
+      margin-bottom: 0px;
+      font-size: .9rem;
+      font: inherit;
+   }
+   .price {
+      font-size: 1.5em;
+      margin-top: 5px;
+      //font-weight: bold;
+   }
    p {
+      
       text-align: center;
    }
 }

@@ -1,22 +1,22 @@
 module.exports = [
     {
         img: '/img/Catalog/IMG_1.JPG',
-        name: '$10',
+        name: '10.00',
         category: 'Hair',
     },
     {
         img: '/img/Catalog/IMG_2.JPG',
-        name: '$20',
+        name: '20.00',
         category: 'Hair',
     },
     {
         img: '/img/Catalog/IMG_3.JPG',
-        name: '$30',
+        name: '30.00',
         category: 'Hair',
     },
     {
         img: '/img/Catalog/IMG_4.JPG',
-        name: '$40',
+        name: '40.00',
         category: 'Hair',
     },
     {

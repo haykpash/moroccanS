@@ -90,7 +90,7 @@ const Login = () => {
         'form-invalid': !formIsValid,
     });
     return (
-        <div className={ theClassname } >
+        <div className={ theClassname }  >
             {
                 (errors.length > 0) &&
             <div className="error-message">
@@ -99,7 +99,8 @@ const Login = () => {
                 </ul>
             </div>
             }
-            <div className="container3">
+                                                                                        
+            <div className="container3 ">
             <div className="form-group">
                 <div className="left">
                     <label htmlFor="email"> Email</label>
@@ -115,6 +116,7 @@ const Login = () => {
                     />
                 </div>
             </div>
+                                                            
             <div className="form-group">
                 <div className="left">
                     <label htmlFor="message">Pasword</label> 
@@ -126,9 +128,10 @@ const Login = () => {
                     placeholder="pasword" />
                 </div>
             </div>
-            <div className="form-group">
-                <div className="left" />
-                <div className="right button">
+                                                            
+            
+                
+                <div className="button">
                     <button
                         tab-index={0}
                         onClick={ handleFormSubmit }
@@ -136,8 +139,10 @@ const Login = () => {
                         >Login
                     </button>
                 </div>
+               
+             
             </div> 
-            </div>    
+                                                                                    
         </div>
     );
 }

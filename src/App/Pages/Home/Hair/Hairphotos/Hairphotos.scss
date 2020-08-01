@@ -1,10 +1,12 @@
 .hairphotos {
+   background: linear-gradient( #daf5ee  ,white , #daf3ed);
    display: flex;
    flex-wrap: wrap;
    justify-content: space-evenly;
 }
 .hairphoto {
-   border: gainsboro 1px solid;
+   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+   //border: gainsboro 1px solid;
    margin: 20px;
    height: fit-content;
    img {

@@ -23,7 +23,7 @@ const Bodyphoto = () => {
                   <p>{photo.category} {photo.name}</p>
                </div>
             );
-         } return false;
+         } return null;
       }
    ));
 }

@@ -4,7 +4,7 @@ import '../Pages.scss';
 
 const Account  = () => {
     return (
-        <div className="Account">
+        <div className="Account Pages">
             <div className="registration">
                 <div className="form-group">
                     <div className="left">
@@ -62,15 +62,14 @@ const Account  = () => {
                         />
                     </div>
                 </div>
-                <div className="form-group">
-                    <div className="left">
-                    </div>
+                
+
                     <div className="right">
                         <button>
                             Register
                         </button>
                     </div>
-                </div>
+                
             </div>
         </div>
     )

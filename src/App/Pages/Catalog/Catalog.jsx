@@ -20,14 +20,19 @@ const CatalogP = () => {
         return (
             <div key={ ikx } className='catalogPhoto'>
                 <img  src={ catalogPhoto.img } alt={ catalogPhoto.name } />
-                <p>$: { catalogPhoto.name }</p>
+                <p className="new">
+                    In Stock
+                </p>
+                <p className="price"> 
+                    ${ catalogPhoto.name }
+                </p>
             </div>
         )
     });
 }
 const Catalog = () => {
     return (
-            <div className='catalogimg'>
+            <div className='catalogimg Pages'>
             <CatalogP />
         </div>
     )

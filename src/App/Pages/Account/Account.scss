@@ -4,7 +4,7 @@
   justify-content: center;
   .registration {
     margin: 2em 2em 5em 2em;
-    width: 450px;
+    width: 470px;
     background-color:white;
     box-shadow: 0 0px 4px 0 rgba(0,0,0,0.50);
     .form-group {
@@ -14,51 +14,54 @@
       .left {
         color:  #566573 ;
         font-weight: bold;
-        font-weight: bold;
         font-size: 20px;
         padding: 10px;
-        flex: 1 ;
-      }
-      label::after {
-        content: ' *';
-        color: #566573;
-        font-size: 17px;
+        flex: 1 0 110px ;
+        label::after {
+          content: ' *';
+          color: #566573;
+          font-size: 17px;
+        }
       }
       .right {
         flex: 2 ;
         display: flex;
-      }
-      input {
-        flex: 1;
-        font-size: 20px;
-        padding: 10px;
-      }
-      button {
-        //box-shadow: 0 0px 2px 0 rgba(0,0,0,0.50);
-        background-color: rgb(75, 114, 110)  ;
-        color:white;
-        border: none;
-        font-size: 20px;
-        line-height: 40px;
-        padding: 0px 20px;
-        &:hover {
-            background-color: rgb(104, 136, 133);
-        }
-        &:active { 
-            background-color: white; 
-            color: rgb(61, 61, 134);
+        input {
+          flex: 1;
+          font-size: 20px;
+          padding: 10px;
         }
       }
-      .pasword {
-        -webkit-text-security: disc;
+ 
+    }
+    button {
+      display: flex;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      //box-shadow: 0 0px 2px 0 rgba(0,0,0,0.50);
+      background-color: rgb(75, 114, 110)  ;
+      color:white;
+      border: none;
+      font-size: 20px;
+      line-height: 40px;
+      padding: 0px 20px;
+      &:hover {
+          background-color: rgb(104, 136, 133);
       }
+      &:active { 
+          background-color: white; 
+          color: rgb(61, 61, 134);
+      }
+    }
+    .pasword {
+      -webkit-text-security: disc;
     }
   }
   background-color: whitesmoke;
 }
 @media screen and (max-width: 768px) {
   .Account {
-    min-height: calc(100vh - 214px);
+    min-height: calc(100vh - 234px);
     .registration {
       //margin: 1em;
       .form-group {
