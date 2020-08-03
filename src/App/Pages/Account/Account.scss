@@ -26,13 +26,19 @@
       .right {
         flex: 2 ;
         display: flex;
+        
+        .emailinvalid {
+          //background: rgb(253, 245, 245);
+          border: solid red 2px;
+          
+        }
         input {
           flex: 1;
           font-size: 20px;
           padding: 10px;
+          border-radius: 4px;
         }
       }
- 
     }
     button {
       display: flex;
@@ -57,15 +63,14 @@
       -webkit-text-security: disc;
     }
   }
-  background-color: whitesmoke;
 }
 @media screen and (max-width: 768px) {
   .Account {
     min-height: calc(100vh - 234px);
     .registration {
-      //margin: 1em;
+      //
       .form-group {
-        
+        //
       }
     }
   }

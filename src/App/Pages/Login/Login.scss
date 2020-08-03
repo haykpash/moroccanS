@@ -6,8 +6,26 @@
   flex-direction: column;
   position: relative;
   //background: whitesmoke;
-  .form-invalid {
-    background: rgb(229, 238, 233); 
+  &.form-valid {
+    .container3 {
+      .right {
+        background-color: yellow;
+      }
+      background-color: yellow;
+    }
+  }
+  &.form-invalid {
+    .container3 {
+      .right {
+        //border: red solid 2px;
+        //background: yellow;
+      }
+      //border: red solid 2px;
+      //background: yellow;
+    }
+      //background-color: fuchsia;
+      //border: red solid 2px;
+    
   }
   .error-message {
     margin: 0 auto;
@@ -33,26 +51,41 @@
         font-weight: bold;
         font-size: 20px;
         padding: 10px;
-        flex: 1 0 80px;
+        flex: 1 0 89px;
+        &.invalid {
+          color: red;
+          }
+        label::after {
+          content: " *";
+          
+            &.invalid {
+            color: red;
+            }
+          
+        }
+        
       }
       .right {
         flex-grow: 2;
         display: flex;
+
         input {
           flex: 1;
           padding: 10px;
           font-size: 20px;
+
+          &.invalid {
+            background-color: rgb(246, 247, 184);  
+          }
         }
       }
       .pasword {
         -webkit-text-security: disc;
       }
-      &.invalid {
-          
-        background-color: rgb(255, 166, 166);  
-      }
+
     }
     button {
+      
       box-shadow: 0 0px 2px 0 rgba(0,0,0,0.50);
       background-color: rgb(75, 114, 110)  ;
       color:white;
@@ -60,7 +93,8 @@
       font-size: 20px;
       line-height: 40px;
       padding: 0px 20px;
-      margin: 20px 40%;
+      margin: 20px 0px 0px 35%;
+      
       width: 115px;
       &:hover {
           background-color: #566573;
@@ -87,6 +121,7 @@
       
       .form-group {
         .button {
+        
         }
       }
     }

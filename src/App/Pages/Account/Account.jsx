@@ -1,77 +1,141 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './Account.scss';
 import '../Pages.scss';
+import { emailCheck, nameCheck, addressCheck } from '../../common/utilities';
 
 const Account  = () => {
+    // States
+    const [emailIsValid, updateImailIsValid] = useState(true);
+    const [passwordIsValid, updatePasswordlIsValid] = useState(true);
+    const [firstNameIsValid, updateFirstNameIsValid] = useState(true);
+    const [lastNameIsValid, updateLastNameIsValid] = useState(true);
+    const [addressIsValid, updateAddressIsValid] = useState(true);
+        // Refs
+    const emailRef = useRef();
+    const passwordlRef = useRef();
+    const firstNameRef = useRef();
+    const lastNameRef = useRef();
+    const addressRef = useRef();
+
+    const handleClick = () =>  {
+        console.log( 'Submit');
+    } // Validate Email
+    const validateEmail = () =>  {
+        console.log(emailRef.current.value);
+        if (!emailCheck(emailRef.current.value)) {
+            updateImailIsValid(false);
+        } else {
+            updateImailIsValid(true);
+        }
+    } // Validate First Name
+    const validateFirstName = () =>  {
+        console.log(firstNameRef.current.value);
+        if (!nameCheck(firstNameRef.current.value)) {
+            updateFirstNameIsValid(false);
+        } else {
+            updateFirstNameIsValid(true);
+        }
+    } // Validate Last Name
+    const validateLastName = () =>  {
+        console.log(lastNameRef.current.value);
+        if (!nameCheck(lastNameRef.current.value)) {
+            updateLastNameIsValid(false);
+        } else {
+            updateLastNameIsValid(true);
+        }
+    }     // Validate Address
+    const validateAddress = () =>  {
+        console.log(addressRef.current.value);
+        if (!addressCheck( addressRef.current.value)) {
+            updateAddressIsValid(false);
+        } else {
+            updateAddressIsValid(true);
+        }
+    }
     return (
-        <div className="Account Pages">
+        <form className="Account Pages">
             <div className="registration">
                 <div className="form-group">
                     <div className="left">
-                        <label htmlFor="FirstNamer">First Name</label> 
+                        <label htmlFor="firstNamer">First Name</label> 
                     </div>
                     <div className="right">
                         <input
-                        name="First Name" 
-                        id="First Name" 
-                        placeholder="First Name" />
+                            className={ firstNameIsValid ? '' : 'emailinvalid' }
+                            ref={ firstNameRef }
+                            name="firstName" 
+                            id="firstName" 
+                            placeholder="First Name" 
+                            onChange={ validateFirstName }
+                        />
                     </div>
                 </div>
                 <div className="form-group">
                     <div className="left">
-                        <label htmlFor="LastNamer">Last Name</label>
+                        <label htmlFor="lastName">Last Name</label>
                     </div>
                     <div className="right">
                         <input 
-                        name="Last Name" 
-                        id="Last Name" 
-                        placeholder="Last Name" />
+                            className={ lastNameIsValid ? '' : 'emailinvalid' }
+                            ref={ lastNameRef }
+                            name="lastName" 
+                            id="lastName" 
+                            placeholder="Last Name"
+                            onChange={ validateLastName } 
+                        />
                     </div>
                 </div>
                 <div className="form-group">
                     <div className="left">
-                        <label htmlFor="LastNamer">Address</label>
+                        <label htmlFor="address">Address</label>
                     </div>
                     <div className="right">
                         <input 
-                        name="Address" 
-                        id="Address" 
-                        placeholder="Address" />
+                            className={ addressIsValid ? '' : 'emailinvalid' }
+                            ref={ addressRef }
+                            name="address" 
+                            id="address" 
+                            placeholder="Address" 
+                            onChange={ validateAddress }
+                        />
                     </div>
                 </div>
                 <div className="form-group">
                     <div className="left">
-                        <label htmlFor="LastNamer">Email</label>
+                        <label htmlFor="email">Email</label>
                     </div>
                     <div className="right">
-                        <input 
-                        name="Email" 
-                        id="Email" 
-                        placeholder="Email" />
+                        <input
+                            className={ emailIsValid ? '' : 'emailinvalid' }
+                            ref={ emailRef }
+                            name="email" 
+                            id="email" 
+                            placeholder="Email" 
+                            onChange={ validateEmail }
+                        />
                     </div>
                 </div>
                 <div className="form-group">
                     <div className="left">
-                        <label htmlFor="LastNamer">Pssword</label>
+                        <label htmlFor="pasword">Pssword</label>
                     </div>
                     <div className="right pasword">
                         <input 
-                            name="Pssword" 
-                            id="Pssword" 
+                            className={ passwordIsValid ? '' : 'emailinvalid' }
+                            ref={ passwordlRef }
+                            name="pasword" 
+                            id="pasword" 
                             placeholder="Pssword"
                         />
                     </div>
                 </div>
-                
-
-                    <div className="right">
-                        <button>
-                            Register
-                        </button>
-                    </div>
-                
+                <div className="right">
+                    <button onClick={ handleClick } >
+                        Register
+                    </button>
+                </div>
             </div>
-        </div>
+        </form>
     )
 };
 export default Account;
