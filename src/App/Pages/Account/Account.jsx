@@ -1,25 +1,79 @@
 import React, { useRef, useState } from 'react';
 import './Account.scss';
 import '../Pages.scss';
-import { emailCheck, nameCheck, addressCheck } from '../../common/utilities';
+import keycode from 'keycode';
+import API from '../../common/API.js';
+import { emailCheck, 
+        firstNameCheck,
+        lastNameCheck,
+        addressCheck } from '../../common/utilities';
 
 const Account  = () => {
     // States
     const [emailIsValid, updateImailIsValid] = useState(true);
-    const [passwordIsValid, updatePasswordlIsValid] = useState(true);
+    const [passwordIsValid ] = useState(true);
     const [firstNameIsValid, updateFirstNameIsValid] = useState(true);
     const [lastNameIsValid, updateLastNameIsValid] = useState(true);
     const [addressIsValid, updateAddressIsValid] = useState(true);
-        // Refs
-    const emailRef = useRef();
-    const passwordlRef = useRef();
+    const [errors, updateErrorsArray] = useState([]);
+    //      Refs
     const firstNameRef = useRef();
     const lastNameRef = useRef();
     const addressRef = useRef();
-
+    const emailRef = useRef();
+    const passwordlRef = useRef();
+    //     Button
     const handleClick = () =>  {
-        console.log( 'Submit');
-    } // Validate Email
+        
+        console.log( 'Clicking submit button');
+    
+        let errorMessages = [];
+    
+        if (!firstNameCheck(firstNameRef.current.value) ) {
+            errorMessages.push({
+                message: 'Invaled First Name',
+            });
+        }
+        if (!lastNameCheck(lastNameRef.current.value) ) {
+            errorMessages.push({
+                message: 'Invaled Last Name',
+            });
+        } 
+        if (!addressCheck(addressRef.current.value) ) {
+            errorMessages.push({
+                message: 'Invaled Address',
+            });
+        } 
+        if (!emailCheck(emailRef.current.value) ) {
+            errorMessages.push({
+                message: 'Invaled Email',
+            });
+        } 
+        if (passwordlRef.current.value.length < 8) {
+            errorMessages.push({
+                message: 'Password must be minimum 8 charachters or numbers',
+            });
+        } 
+        updateErrorsArray(errorMessages);
+        
+        if (errorMessages.length === 0 ) {
+            //updateFirstNameIsValid(true);
+                
+                console.log('Posting Data');
+                
+            const postData = {
+                firstName: firstNameRef.current.value,
+                lastName: lastNameRef.current.value,
+                address: addressRef.current.value,
+                email: emailRef.current.value,
+                password: passwordlRef.current.value,
+            }
+            API.post('registrationForm', postData).then((result) => {
+                console.log('Posting the data', result);
+            });
+        }
+    } 
+    //        Validate Email
     const validateEmail = () =>  {
         console.log(emailRef.current.value);
         if (!emailCheck(emailRef.current.value)) {
@@ -27,23 +81,26 @@ const Account  = () => {
         } else {
             updateImailIsValid(true);
         }
-    } // Validate First Name
+    } 
+    //       Validate First Name
     const validateFirstName = () =>  {
         console.log(firstNameRef.current.value);
-        if (!nameCheck(firstNameRef.current.value)) {
+        if (!firstNameCheck(firstNameRef.current.value)) {
             updateFirstNameIsValid(false);
         } else {
             updateFirstNameIsValid(true);
         }
-    } // Validate Last Name
+    } 
+    //       Validate Last Name
     const validateLastName = () =>  {
         console.log(lastNameRef.current.value);
-        if (!nameCheck(lastNameRef.current.value)) {
+        if (!lastNameCheck(lastNameRef.current.value)) {
             updateLastNameIsValid(false);
         } else {
             updateLastNameIsValid(true);
         }
-    }     // Validate Address
+    }     
+    //        Validate Address
     const validateAddress = () =>  {
         console.log(addressRef.current.value);
         if (!addressCheck( addressRef.current.value)) {
@@ -51,9 +108,31 @@ const Account  = () => {
         } else {
             updateAddressIsValid(true);
         }
+    }//      Looping error messages
+    const displayErrors = () => {
+        return errors.map((error, idx) => {
+            return ( 
+                <li key={ idx }>  { error.message }</li> 
+            );
+        });
     }
+    //      keycode button
+    const handleKeyDown = (event) => {
+        switch (keycode(event)) {
+            case 'enter':
+                handleClick();
+                break;
+            default: 
+                return true;
+        }
+    };
     return (
-        <form className="Account Pages">
+        <div className="Account Pages">
+            <div className="error-message">
+                <ul>
+                    { displayErrors() }
+                </ul>
+            </div>
             <div className="registration">
                 <div className="form-group">
                     <div className="left">
@@ -129,13 +208,17 @@ const Account  = () => {
                         />
                     </div>
                 </div>
-                <div className="right">
-                    <button onClick={ handleClick } >
-                        Register
+                <div >
+                    <button 
+                        tabIndex={ 0 }
+                        onClick={ handleClick } 
+                        onKeyDown={ handleKeyDown }
+                        >
+                                Register
                     </button>
                 </div>
             </div>
-        </form>
+        </div>
     )
 };
 export default Account;

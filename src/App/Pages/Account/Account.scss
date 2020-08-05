@@ -1,10 +1,28 @@
 .Account {
   min-height: calc(100vh - 334px);
-  display: flex;
-  justify-content: center;
+  //display: flex;
+  //justify-content: center;
+  border: rgb(182, 181, 181) .1px solid;
+  .error-message {
+    max-width: 450px;
+    margin: auto;
+    color: red;
+    ul { padding-inline-start: 0px;}
+    li {
+      list-style-type: circle;
+      list-style-position: inside;
+      border-radius: 10px;
+      padding: 5px;
+      border: solid 1px rgba($color: red, $alpha: .3) ;
+      margin: 1px;
+    } 
+  }
   .registration {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    border: rgb(192, 190, 190) solid 0.1px;
     margin: 2em 2em 5em 2em;
-    width: 470px;
+    max-width: 470px;
     background-color:white;
     box-shadow: 0 0px 4px 0 rgba(0,0,0,0.50);
     .form-group {
@@ -29,7 +47,7 @@
         
         .emailinvalid {
           //background: rgb(253, 245, 245);
-          border: solid red 2px;
+          border: solid red 1px;
           
         }
         input {

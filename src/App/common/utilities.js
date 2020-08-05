@@ -3,7 +3,11 @@ export const emailCheck = (email) => {
     return patt.test(String(email).toLowerCase());
 }
 
-export const nameCheck = (name) => {
+export const firstNameCheck = (name) => {
+    var patt = new RegExp(/^[a-zA-Z]+$/);
+    return patt.test(String(name).toLowerCase());
+}
+export const lastNameCheck = (name) => {
     var patt = new RegExp(/^[a-zA-Z]+$/);
     return patt.test(String(name).toLowerCase());
 }
