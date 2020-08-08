@@ -11,7 +11,7 @@
    z-index: 9999;
 
    .light {
-      width: 600px;
+      width: 550px;
       //height: 350px;
       position: absolute;
       left: 50%;
@@ -34,7 +34,7 @@
 @media screen and (max-width: 700px ) {
    .lightbox {
       .light {
-         width: 420px;
+         width: 400px;
          img {
             
          }
@@ -44,7 +44,7 @@
 @media screen and (max-width: 510px ) {
    .lightbox {
       .light{
-         width: 350px;
+         width: 300px;
          img {
             
          }
