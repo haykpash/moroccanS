@@ -1,8 +1,16 @@
 .Account {
   min-height: calc(100vh - 334px);
-  //display: flex;
-  //justify-content: center;
   border: rgb(182, 181, 181) .1px solid;
+  .SuccessSubmit::after {
+    position: relative;
+    left: 20%;
+    border-radius: 5px;
+    color: green ;
+    font-size: 22px;
+    padding: .4em 3em .6em 3em;
+    border: green solid 1px;
+    content: ' Succsessful'  ;
+  }
   .error-message {
     max-width: 450px;
     margin: auto;

@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import './Account.scss';
 import '../Pages.scss';
 import keycode from 'keycode';
+import classnames from 'classnames';
 import API from '../../common/API.js';
 import { emailCheck, 
         firstNameCheck,
@@ -16,6 +17,7 @@ const Account  = () => {
     const [lastNameIsValid, updateLastNameIsValid] = useState(true);
     const [addressIsValid, updateAddressIsValid] = useState(true);
     const [errors, updateErrorsArray] = useState([]);
+    const [successful, uptudeSuccessfull] = useState();
     //      Refs
     const firstNameRef = useRef();
     const lastNameRef = useRef();
@@ -57,10 +59,8 @@ const Account  = () => {
         updateErrorsArray(errorMessages);
         
         if (errorMessages.length === 0 ) {
-            //updateFirstNameIsValid(true);
-                
+            uptudeSuccessfull(true);
                 console.log('Posting Data');
-                
             const postData = {
                 firstName: firstNameRef.current.value,
                 lastName: lastNameRef.current.value,
@@ -71,6 +71,9 @@ const Account  = () => {
             API.post('registrationForm', postData).then((result) => {
                 console.log('Posting the data', result);
             });
+        } else {
+            uptudeSuccessfull(false);
+            //e.preventDefault();
         }
     } 
     //        Validate Email
@@ -126,9 +129,13 @@ const Account  = () => {
                 return true;
         }
     };
+    const theClassnames = classnames({
+        'error-message': true,
+        'SuccessSubmit': successful,
+    });
     return (
         <div className="Account Pages">
-            <div className="error-message">
+            <div className={theClassnames}>
                 <ul>
                     { displayErrors() }
                 </ul>
