@@ -4,7 +4,7 @@ const express = require('express');
 
 // Initiaize Instance of Express as app
 const app = express();
-
+app.disable('x-powered-by')  // for safety 
 // POST Requests: In order to accept post requests, you must use bodyParser
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
