@@ -7,7 +7,7 @@ const  Body = () => {
    return (
       <div className='blok3'>
          <div className='photocontainer'>
-            <img src="/img/photos/body_care.jpeg" alt='body'/>
+            <img src="/img/photos/body_care.jpg" alt='body'/>
             <h1>
                <NavLink 
                className="navlink" 
