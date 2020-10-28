@@ -1,5 +1,5 @@
-module.exports = {
-    photos: [
+module.exports = [ 
+    
     {
       
       img: '/img/photos/body_care.jpeg', 
@@ -15,5 +15,4 @@ module.exports = {
       img: '/img/photos/hair_care.JPG', 
       name: 'hair_care',
     },
-  ],
-}
+  ]
