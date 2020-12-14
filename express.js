@@ -1,6 +1,7 @@
 // require('dotenv').config();
 const path = require('path');
 const express = require('express');
+const bodyParser = require("body-parser");
 
 // Initiaize Instance of Express as app
 const app = express();
@@ -9,7 +10,7 @@ const app = express();
 //app.disable('x-powered-by')  
 //----------------------------------------------------------
 // POST Requests: In order to accept post requests, you must use bodyParser
-const bodyParser = require("body-parser");
+//-----const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 

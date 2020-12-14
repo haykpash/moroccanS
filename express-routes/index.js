@@ -6,11 +6,11 @@ const slides = require('./slides/slides.js');
 // const login = require('./login/login.js');
 
 const routes = {
-    catalog: catalog,
-    praducts: praducts,
-    email: email,
-    slides: slides,
-    // login: login,
+  catalog: catalog,
+  praducts: praducts,
+  email: email,
+  slides: slides,
+  // login: login,
 
 }
 

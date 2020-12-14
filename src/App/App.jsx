@@ -8,15 +8,15 @@ import Nav from './Nav/Nav.jsx';
 import Footer from './Footer/Footer.jsx';
 
 const App = () => {
-    return (
-        <Router>
-            <div className = "App" >
-                < Header />
-                < Nav />
-                < Main />
-                < Footer />
-            </div>
-        </Router>
-    )
+	return (
+		<Router>
+			<div className = "App" >
+				< Header />
+				< Nav />
+				< Main />
+				< Footer />
+			</div>
+		</Router>
+	)
 };
 export default App;
