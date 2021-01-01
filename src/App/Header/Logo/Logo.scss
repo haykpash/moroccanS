@@ -1,18 +1,15 @@
 .Logo {
-   img {
-      //z-index: 999;
-      margin-top: 10%;
-      //background-color:  #d7b272;
-      height: 70px;
-      width: auto;
-      background: linear-gradient(to right , #302004 10%  , #e4ba72 , #5a3b05  );
-   }
+  img {
+    margin-top: 10%;
+    height: 70px;
+    width: auto;
+    background: linear-gradient(to right, #302004 10%, #e4ba72, #5a3b05);
+  }
 }
 @media screen and (max-width: 768px) {
-   .Logo {
-      img {
-         height: 40px;
-         //width: auto;
-      }
-   }
+  .Logo {
+    img {
+      height: 40px;
+    }
+  }
 }

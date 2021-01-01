@@ -1,22 +1,21 @@
 .Footer {
-
-    background-color: #2e8577;
-    height:100px;
-    .icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        a {
-            color: #cfd4d3;
-            width: 27px;
-            margin: 30px;
-            &:hover {
-                color: white;
-            }
-        }
-        svg {
-            width: 100%;
-            height: auto;
-        }
+  background-color: #2e8577;
+  height: 100px;
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      color: #cfd4d3;
+      width: 27px;
+      margin: 30px;
+      &:hover {
+        color: white;
+      }
     }
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
