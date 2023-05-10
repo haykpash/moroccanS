@@ -26,7 +26,7 @@
     "react-lazyload": "^3.1.0",
     "react-responsive-carousel": "^3.2.4",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.4"
   },
   "homepage": "https://exampleapp444.herokuapp.com/",
   "heroku-run-build-script": true,
